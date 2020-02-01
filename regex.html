@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>regex</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='navbar'>
+        <a class="navbtn" href="index.html">Home</a>
+        <a class="navbtn" href="regex.html">Regex</a>
+        <a class="navbtn" href="markdown.html">Markdown</a>
+        <a class="navbtn" href="about.html">About</a>
+    </div>
+
+    <div class="pageContainer">
+        <img src="./images/regex.PNG" alt="RegEx" class="centeredImg" />
+        <div class="syntax-container">
+            <table>
+                <tr>
+                    <th colspan="3">Anchors</th>
+                </tr>
+                <tr>
+                    <td class="command"> ^ </td>
+                    <td class="description"> Beginning of a string or multi-line pattern</td>
+                </tr>
+                <tr>
+                    <td class="command"> \A </td>
+                    <td class="description"> Beginning of a string </td>
+                </tr>
+                <tr>
+                    <td class="command"> $ </td>
+                    <td class="description"> End of string or multi-line pattern </td>
+                </tr>
+                <tr>
+                    <td class="command"> \Z </td>
+                    <td class="description"> End of string </td>
+                </tr>
+                <tr>
+                    <td class="command"> \< </td> <td class="description"> Beginning of word </td>
+                </tr>
+                <tr>
+                    <td class="command"> \> </td>
+                    <td class="description"> End of word </td>
+                </tr>
+                <tr>
+                    <td class="command"> \b </td>
+                    <td class="description"> Word bound</td>
+                </tr>
+                <tr>
+                    <td class="command"> \B </td>
+                    <td class="description"> Not word bound </td>
+                </tr>
+            </table>
+
+
+            <table>
+                <tr>
+                    <th colspan="3">Character Classes</th>
+                </tr>
+                <tr>
+                    <td class="command">\c</td>
+                    <td class="description">
+                        Control character</td>
+                </tr>
+                <tr>
+                    <td class="command">\s</td>
+                    <td class="description">
+                        White space</td>
+                </tr>
+                <tr>
+                    <td class="command">\S</td>
+                    <td class="description">
+                        Not white space</td>
+                </tr>
+                <tr>
+                    <td class="command">\d</td>
+                    <td class="description">
+                        Digit</td>
+                </tr>
+                <tr>
+                    <td class="command">\D</td>
+                    <td class="description">
+                        Not digit</td>
+                </tr>
+                <tr>
+                    <td class="command">\w</td>
+                    <td class="description">
+                        Word</td>
+                </tr>
+                <tr>
+                    <td class="command">\W</td>
+                    <td class="description">
+                        Not word</td>
+                </tr>
+                <tr>
+                    <td class="command">\x</td>
+                    <td class="description">
+                        Hexade­cimal digit</td>
+                </tr>
+                <tr>
+                    <td class="command">\O</td>
+                    <td class="description">
+                        Octal digit</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th colspan="3">Escape Sequences</th>
+                </tr>
+                <tr>
+                    <td class="command">\</td>
+                    <td class="description">
+                        Escape following character</td>
+                </tr>
+                <tr>
+                    <td class="command">\Q</td>
+                    <td class="description">
+                        Begin literal sequence</td>
+                </tr>
+                <tr>
+                    <td class="command">\E</td>
+                    <td class="description">
+                        End literal sequence</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th colspan="3"> Quantifiers</th>
+                <tr>
+                    <td class="command">*</td>
+                    <td class="description">
+                        0 or more</td>
+                </tr>
+                <tr>
+                    <td class="command">{3}</td>
+                    <td class="description">
+                        Exactly 3</td>
+                </tr>
+                <tr>
+                    <td class="command">+</td>
+                    <td class="description">
+                        1 or more</td>
+                </tr>
+                <tr>
+                    <td class="command">{3,}</td>
+                    <td class="description">
+                        3 or more</td>
+                </tr>
+                <tr>
+                    <td class="command">?</td>
+                    <td class="description">
+                        0 or 1</td>
+                </tr>
+                <tr>
+                    <td class="command">{3,5}</td>
+                    <td class="description">
+                        3, 4 or 5</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th colspan="3">Groups and Ranges</th>
+                </tr>
+                <tr>
+                    <td class="command"> .</td>
+                    <td class="description">
+                        Any character except new line (\n)</td>
+                </tr>
+                <tr>
+                    <td class="command">(a|b)</td>
+                    <td class="description">
+                        a or b</td>
+                </tr>
+                <tr>
+                    <td class="command">(...)</td>
+                    <td class="description">
+                        Group</td>
+                </tr>
+                <tr>
+                    <td class="command">(?:...)</td>
+                    <td class="description">
+                        Passive (non-c­apt­uring) group</td>
+                </tr>
+                <tr>
+                    <td class="command">[abc]</td>
+                    <td class="description">
+                        Range (a or b or c)</td>
+                </tr>
+                <tr>
+                    <td class="command">[^abc]</td>
+                    <td class="description">
+                        Not (a or b or c)</td>
+                </tr>
+                <tr>
+                    <td class="command">[a-q]</td>
+                    <td class="description">
+                        Lower case letter from a to q</td>
+                </tr>
+                <tr>
+                    <td class="command">[A-Q]</td>
+                    <td class="description">
+                        Upper case letter from A to Q</td>
+                </tr>
+                <tr>
+                    <td class="command">[0-7]</td>
+                    <td class="description">
+                        Digit from 0 to 7</td>
+                </tr>
+                <tr>
+                    <td class="command">\x</td>
+                    <td class="description">
+                        Group/­sub­pattern number "­x"</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th colspan="3">(Possible) Pattern Modifiers</th>
+                </tr>
+                <tr>
+                    <td class="command">g</td>
+                    <td class="description">
+                        Global match</td>
+                </tr>
+                <tr>
+                    <td class="command">i</td>
+                    <td class="description">
+                        Case-i­nse­nsitive</td>
+                </tr>
+                <tr>
+                    <td class="command">m</td>
+                    <td class="description">
+                        Multiple lines</td>
+                </tr>
+                <tr>
+                    <td class="command">s</td>
+                    <td class="description">
+                        Treat string as single line</td>
+                </tr>
+                <tr>
+                    <td class="command">x</td>
+                    <td class="description">
+                        Allow comments and whitespace in pattern</td>
+                </tr>
+                <tr>
+                    <td class="command">e</td>
+                    <td class="description">
+                        Evaluate replac­ement</td>
+                </tr>
+                <tr>
+                    <td class="command">U</td>
+                    <td class="description">
+                        Ungreedy pattern</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th colspan="3">String Replac­ement</th>
+                </tr>
+                <tr>
+                    <td class="command">$n</td>
+                    <td class="description">
+                        nth non-pa­ssive group</td>
+                </tr>
+                <tr>
+                    <td class="command">$2</td>
+                    <td class="description">
+                        "­xyz­" in /^(abc­(xy­z))$/</td>
+                </tr>
+                <tr>
+                    <td class="command">$1</td>
+                    <td class="description">
+                        "­xyz­" in /^(?:a­bc)­(xyz)$/</td>
+                </tr>
+                <tr>
+                    <td class="command">$`</td>
+                    <td class="description">
+                        Before matched string</td>
+                </tr>
+                <tr>
+                    <td class="command">$'</td>
+                    <td class="description">
+                        After matched string</td>
+                </tr>
+                <tr>
+                    <td class="command">$+</td>
+                    <td class="description">
+                        Last matched string</td>
+                </tr>
+                <tr>
+                    <td class="command">$&</td>
+                    <td class="description">
+                        Entire matched string</td>
+                </tr>
+        </div>
+        </table>
+
+        <div class="comingSoon">... more coming soon!</div>
+    </div>
+
+</body>
+
+</html>

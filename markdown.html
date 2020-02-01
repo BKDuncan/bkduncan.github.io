@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>markdown</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class='navbar'>
+        <a class="navbtn" href="index.html">Home</a>
+        <a class="navbtn" href="regex.html">Regex</a>
+        <a class="navbtn" href="markdown.html">Markdown</a>
+        <a class="navbtn" href="about.html">About</a>
+    </div>
+
+
+    <div class="pageContainer">
+        <img src="./images/markdown.PNG" alt="Markdown" class="centeredImg" />
+
+        <div class="syntax-container">
+            <div class="syntaxList">
+                <h2>Headers</h2>
+                <ul>
+                    <li class="tooltipSubject" tabindex="0">
+                        <h1>H1 Title</h1>
+                    </li>
+                    <div class="hoverTooltip">
+                        <p class="codeBlock"> <span class="codeHighlight">#</span> H1 Title </p>
+                    </div>
+
+                    <li class="tooltipSubject" tabindex="0">
+                        <h2>H2 Title</h2>
+                    </li>
+                    <div class="hoverTooltip">
+                        <p class="codeBlock"> <span class="codeHighlight">##</span> H2 Title </p>
+                    </div>
+
+                    <li class="tooltipSubject" tabindex="0">
+                        <h3>H3 Title</h3>
+                    </li>
+                    <div class="hoverTooltip">
+                        <p class="codeBlock"> <span class="codeHighlight">###</span> H3 Title </p>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="syntaxList">
+                <h2>Code</h2>
+                <ul>
+                    <li class="tooltipSubject" tabindex="0">
+                        <p>Inline code: <span class="codeBlock inline">function foo</span> </p>
+                    </li>
+                    <div class="hoverTooltip">
+                        <p class="codeBlock"> Inline code: <span class="codeHighlight">`function foo`</span> </p>
+                    </div>
+
+                    <li class="tooltipSubject" tabindex="0">
+                        <h4>Code block:</h4>
+                        <p class="codeBlock inline">
+    const foo = () => {      
+        const x = 'hello ';     
+        const y = 'world!';     
+        console.log(x + y);     
+    }                        
+                        </p>
+                    </li>
+                    <div class="hoverTooltip">
+                        <p class="codeBlock"> #### Code block:
+
+                            <span class="codeHighlight">``` javascript</span>
+                            const foo = () => {
+                            const x = 'hello ';
+                            const y = 'world!';
+                            console.log(x + y);
+                            }
+                            <span class="codeHighlight">```</span>
+                        </p>
+                    </div>
+            </div>
+
+            <div class="syntaxList">
+                <h2>Emphasis</h2>
+
+                <ul>
+                    <li class="tooltipSubject" tabindex="0">
+                        <p>Bold <b>text</b>!</p>
+                    </li>
+                    <div class="hoverTooltip">
+                        <p class="codeBlock"> Bold <span class="codeHighlight">**text**</span>!</p>
+                    </div>
+
+                    <li class="tooltipSubject" tabindex="0">
+                        <p>Italic <i>text</i></p>
+                    </li>
+                    <div class="hoverTooltip">
+                        <p class="codeBlock"> Italic <span class="codeHighlight">*text*</span></p>
+                    </div>
+
+                    <li class="tooltipSubject" tabindex="0">
+                        <p>Strikethrough <del>text</del></p>
+                    </li>
+                    <div class="hoverTooltip">
+                        <p class="codeBlock"> Strikethrough <span class="codeHighlight">~~text~~</span></p>
+                    </div>
+
+                    <li class="tooltipSubject" tabindex="0">
+                        <p>Hyperlinked <a class="embeddedHyperlink">text</a></p>
+                    </li>
+                    <div class="hoverTooltip">
+                        <p class="codeBlock"> Hyperlinked <span class="codeHighlight">[text](link)</span></p>
+                    </div>
+
+                </ul>
+            </div>
+
+            <div class="syntaxList wide">
+                <h2>Lists</h2>
+                <div class="sublistRow">
+                    <div class="sublistCol">
+                        <div class="tooltipSubject" tabindex="0">
+                            <h4>Bullet</h4>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                            </ul>
+                        </div>
+                        <div class="hoverTooltip">
+                            <p class="codeBlock">
+                                #### Bullet
+                                <span class="codeHighlight">
+                                    - Item 1
+                                    - Item 2
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="sublistCol">
+                        <div class="tooltipSubject" tabindex="0">
+                            <h4>Ordered</h4>
+                            <ol>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                            </ol>
+                        </div>
+                        <div class="hoverTooltip">
+                            <p class="codeBlock">
+                                #### Ordered
+                                <span class="codeHighlight">
+                                    1. Item 1
+                                    1. Item 2
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comingSoon">... more coming soon!</div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
