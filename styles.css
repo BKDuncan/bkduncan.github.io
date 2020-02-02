@@ -60,6 +60,16 @@ body {
     margin: auto;
 }
 
+.aboutContent {
+    text-align: left;
+    padding-left: 22rem;
+    width: 100%;
+}
+
+.connectTitle {
+    margin-top: 5rem;
+}
+
 /* NAVIGATION BAR */
 .navbar {
     display: flex;
@@ -231,4 +241,9 @@ li {
     width: auto;
     display: inline;
     margin: 0 -30%;
+}
+
+.badge {
+    width: 3rem;
+    padding: 1rem;
 }
